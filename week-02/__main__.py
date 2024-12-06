@@ -54,7 +54,7 @@ def compare_histograms_chi_squared(histogram1, histogram2):
 
     return chi_squared_value
 
-image_path = 'week-02/image/IMG_1230.jpeg'
+image_path = 'week-02/image/01.jpg'
 
 histRed, histGreen, histBlue, image_data = create_histogram(image_path)
 
@@ -64,6 +64,7 @@ histGray, gray_data = create_histogram(gray_image)
 chi_squared_red = compare_histograms_chi_squared(histGray, histRed)
 chi_squared_green = compare_histograms_chi_squared(histGray, histGreen)
 chi_squared_blue = compare_histograms_chi_squared(histGray, histBlue)
+
 
 plt.figure(figsize=(12, 10))
 
